@@ -11,6 +11,6 @@ const buttonLabel = stock > 0 ? "Out of Stock" : "Add to Cart";
 console.log(buttonLabel);
 
 // Fix: โจทย์ต้องการ stock = 0 → "Out of Stock" กับ stock > 0 → "Add to Cart"
-        // syntax อยู่สลับที่กัน ดังนั้นจึงต้องย้าย Out of Stock กับ Add to Cart
-const buttonLabel = stock > 0 ? "Add to Cart" : "Out of Stock";
+        // ดังนั้น จึงต้องแทนที่ stock > 0 ด้วย stock = 0
+const buttonLabel = stock == 0 ? "Add to Cart" : "Out of Stock";
 console.log(buttonLabel);
